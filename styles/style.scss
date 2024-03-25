@@ -1,0 +1,270 @@
+BODY{
+    margin: 0;
+   overflow-x: hidden;
+    
+}
+@mixin flex-centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin width-heght-bg($width,$height,$bgcolor)
+{
+    width: $width;
+    height: $height;
+    background-color: $bgcolor;
+}
+.nav-bar{
+    @include width-heght-bg(100%,100px,#fff);
+    @include flex-centre();
+     gap: 15px;
+     font-family: 'Courier New', Courier, monospace;
+     .links-side ul{
+        li{
+            text-decoration: none;
+      
+        }
+        text-decoration: none;
+        list-style: none;
+        @include flex-centre();
+        gap: 10px;
+
+      
+    a{
+        color: black;
+      text-decoration: none;
+
+     }
+}
+
+}
+.card-conteiner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .right-side{
+        background-color:#58A399 ;
+        width: 50%;
+        height: 107vh;
+        @include flex-centre();
+        flex-direction: column;
+        text-align: center;
+        .inner{
+            @include flex-centre();
+            flex-direction: column;
+            text-align: center;
+.input-conteiner{
+    @include flex-centre();
+}
+            p{
+             
+                font-size: 55px;
+                font-family: 'Times New Roman', Times, serif;
+                width: 500px;
+                color: #fff;
+            }  
+            button {
+                width: 150px;
+                height: 40px;
+                border-radius: 0px;
+                background-color:#58A399;
+                font-size: 13px;
+                color: white;
+             
+                margin:10px;
+                padding: 4px;
+                border:white 1px solid;
+                transition: 300ms;
+                
+        
+        
+            }
+          
+        }
+    }
+    .left-side{
+        height: 107vh;
+    }
+   
+    }
+
+   
+
+.main-text{
+    width: 100%;
+    height: 100vh;
+    @include flex-centre(); 
+    flex-direction: column;
+    h5{
+        color: rgba(0, 0, 0, 0.753);
+        @include flex-centre();
+        flex-direction: column;
+        text-align: center;
+        border-bottom: 2px solid #58A399;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       font-size: 20px;
+    }
+    p{
+        @include flex-centre(); 
+        width: 630px;
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.753);
+      font-family: 'Times New Roman', Times, serif;
+
+    }
+}
+.card-image{
+    width: 100%;
+    height: 70px;
+  
+    .image-image{
+        width: 100%;
+        height: 200px;
+        @include flex-centre(); 
+        img{
+            width:100%;
+            height: 650px;
+        }
+    }
+}
+.description-container{
+    width: 100%;
+    height: 150vh;
+    @include flex-centre();
+    flex-direction: column;
+   
+    h4{
+        color: rgba(0, 0, 0, 0.753);
+        @include flex-centre();
+        flex-direction: column;
+        text-align: center;
+        border-bottom: 2px solid  rgba(0, 0, 0, 0.753);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       font-size: 20px;
+    }
+    .card-container1{
+        @include flex-centre();
+        gap: 30px;
+        border-radius: 2px solid  #58A399 ;
+        .card{
+            border-radius: 2px solid  #58A399 ;
+            width:235px ;
+            @include flex-centre(); 
+            h5{
+                color: rgba(0, 0, 0, 0.753);
+                @include flex-centre();
+                flex-direction: column;
+                text-align: center;
+                border-bottom: 2px solid #58A399;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+               font-size: 20px;
+            }
+            p{
+                @include flex-centre();   
+                width: 200px;
+            }
+            h6{
+                color: #58A399;
+                @include flex-centre(); 
+                font-size: 12px;
+            }
+        }
+       
+    }
+ 
+}
+.happy-clients{
+    width: 100%;
+   height: 70vh;
+   @include flex-centre();
+    flex-direction: column;
+    background-color: #58A399;
+    h5{
+        color:white;
+        @include flex-centre();
+        flex-direction: column;
+        text-align: center;
+        border-bottom: 2px solid white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       font-size: 20px;
+       background-color: #58A399;
+    }
+    .clients-photos{
+        height: 500px;
+        @include flex-centre(); 
+        img{
+            height: 400px;
+            width: 350px;
+            @include flex-centre(); 
+        }
+    }
+}
+.card-container2{
+    width: 100%;
+    height: 120px;
+    @include flex-centre();
+    .left-side1{
+        width: 50%;
+        height: 98px;
+
+    }
+    .right-side1{
+        width: 50%;
+        height: 95px;
+        h4{
+            color: 2px solid  rgba(0, 0, 0, 0.753);
+            @include flex-centre();
+            flex-direction: column;
+            text-align: center;
+            border-bottom:  1px solid  rgba(0, 0, 0, 0.753) ;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           font-size: 17px;
+        
+        }
+        .icons{
+            @include flex-centre();
+            gap: 10px;
+        }
+        p{
+            @include flex-centre(); 
+            font-size: 20px;
+        }
+       .button-container{
+        @include flex-centre(); 
+       button{
+        border: none;
+        background-color: #fff;
+        font-size: 20px;
+       }
+       }
+       .button-container1{
+        @include flex-centre(); 
+        button{
+         border: none;
+         background-color: #fff;
+         font-size: 20px;
+        }
+       }
+    }
+}
+.color-container{
+    width: 100%;
+    height: 67px;
+    background-color: #58A399;
+    @include flex-centre(); 
+}
+@media screen  and (max-width:768px){
+    .nav-bar{
+      width: 100%;
+    }
+   .card-container{
+    flex-direction: column;
+
+    .left-side, .right-side{
+      
+        width: 100%;
+        height: 50%;
+    }
+   }
+}
